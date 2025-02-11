@@ -56,6 +56,7 @@ def get_weather(region):
     weather = response["now"]["text"]
     # 当前温度
     temp = response["now"]["temp"] + u"\N{DEGREE SIGN}" + "C"
+    return weather, temp  # 添加返回值
  
  
 def get_birthday(birthday, year, today):
